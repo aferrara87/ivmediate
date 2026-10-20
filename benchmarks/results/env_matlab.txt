@@ -1,0 +1,1 @@
+MATLAB 26.2.0.3386108 (R2026b); ivmediate 2.0.0; Intel(R) oneAPI Math Kernel Library Version 2025.3-Product Build 20251007 for Intel(R) 64 architecture applications (CNR branch AVX2); computational threads 24

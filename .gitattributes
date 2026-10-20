@@ -1,0 +1,2 @@
+# Store text files with LF line endings; check them out in the platform's native style
+* text=auto

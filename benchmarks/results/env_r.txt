@@ -1,0 +1,1 @@
+R version 4.5.2 (2025-10-31 ucrt); ivmediate 2.0.0; BLAS (R's reference BLAS); LAPACK 3.12.1

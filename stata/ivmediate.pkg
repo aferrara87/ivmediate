@@ -1,0 +1,24 @@
+v 3
+d ivmediate: causal mediation analysis for linear IV models with a single instrument
+d
+d Decomposes the effect of a treatment T on an outcome Y into a direct
+d effect and an indirect effect through a mediator M, using one or more
+d instruments for T and no separate instrument for M (Ferrara, Gold,
+d Heblich, and Pinto 2026). Reports the Olea-Pflueger effective F,
+d Anderson-Rubin confidence sets, and kappa- and R-squared-based
+d sensitivity analyses; supports one- and two-way absorbed fixed
+d effects, weights, robust, cluster and Conley standard errors,
+d post-double-selection LASSO, and the bootstrap.
+d
+d Version 2.0.0; replaces ivmediate 1.0.4 (SSC, 2020).
+d Requires Stata 16 or later.
+d
+d Authors: Andreas Ferrara (maintainer, a.ferrara@pitt.edu),
+d Robert Gold, Stephan Heblich, Rodrigo Pinto
+d License: MIT. Copyright (c) 2026 Andreas Ferrara, Robert Gold,
+d Stephan Heblich, Rodrigo Pinto
+d Source and issues: https://github.com/aferrara87/ivmediate
+d
+d Distribution-Date: 20261017
+f ivmediate.ado
+f ivmediate.sthlp

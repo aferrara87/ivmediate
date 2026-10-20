@@ -1,0 +1,13 @@
+{
+  "_source": "Paper, Table 6, column 1 (rounded as printed). Robust (HC1) standard errors, K = 1 instrument.",
+  "n": 426,
+  "total":    {"est": 0.586,  "se": 0.242},
+  "tau":      {"est": -0.299, "se": 0.214},
+  "theta":    {"est": 4.709,  "se": 2.164},
+  "gamma":    {"est": 0.188,  "se": 0.027},
+  "indirect": {"est": 0.886,  "se": 0.408},
+  "ar_theta": [0.43, 10.20],
+  "F_TZ": 75.69,
+  "F_MZ_T": 16.36,
+  "rho_TY_star": -0.257
+}

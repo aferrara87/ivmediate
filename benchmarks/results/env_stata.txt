@@ -1,0 +1,1 @@
+Stata 19.5 SE (processors used: 1); ivmediate 2.0.0

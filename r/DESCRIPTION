@@ -1,0 +1,24 @@
+Package: ivmediate
+Type: Package
+Title: Causal Mediation Analysis with a Single Instrument
+Version: 2.0.0
+Authors@R: c(
+    person("Andreas", "Ferrara", email = "a.ferrara@pitt.edu", role = c("aut", "cre")),
+    person("Robert", "Gold", role = "aut"),
+    person("Stephan", "Heblich", role = "aut"),
+    person("Rodrigo", "Pinto", role = "aut"))
+Description: Estimates causal mediation effects with a single instrument for the
+    treatment, following Ferrara, Gold, Heblich and Pinto (2026): the total, direct,
+    mediator and indirect effects by two-stage least squares, with classical, robust,
+    clustered or spatial (Conley) standard errors, absorbed one- and two-way fixed
+    effects and weights. Reports Olea-Pflueger first-stage diagnostics,
+    Anderson-Rubin confidence sets, kappa- and R-squared-based sensitivity analyses,
+    an optional post-double-selection LASSO for the controls and bootstrap inference.
+License: MIT + file LICENSE
+URL: https://github.com/aferrara87/ivmediate
+BugReports: https://github.com/aferrara87/ivmediate/issues
+Depends: R (>= 4.2.0)
+Imports: Matrix, parallel, stats, utils
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1

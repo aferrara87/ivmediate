@@ -1,0 +1,1318 @@
+{
+ "configs": [
+  {
+   "name": "base_robust",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "classical",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "classical"
+  },
+  {
+   "name": "cluster",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu"
+  },
+  {
+   "name": "spatial_uni_hav",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "spatial",
+   "lat": "lat",
+   "lon": "lon",
+   "spatial_cutoff": 150.0,
+   "spatial_kernel": "uniform",
+   "spatial_metric": "haversine"
+  },
+  {
+   "name": "spatial_bart_euc",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "spatial",
+   "lat": "lat",
+   "lon": "lon",
+   "spatial_cutoff": 1.2,
+   "spatial_kernel": "bartlett",
+   "spatial_metric": "euclidean"
+  },
+  {
+   "name": "wt_aw_robust",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "weights": "w",
+   "wtype": "aweight"
+  },
+  {
+   "name": "wt_pw_cluster",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "weights": "w",
+   "wtype": "pweight"
+  },
+  {
+   "name": "wt_pw_classical",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "classical",
+   "weights": "w",
+   "wtype": "pweight"
+  },
+  {
+   "name": "wt_aw_classical",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "classical",
+   "weights": "w",
+   "wtype": "aweight"
+  },
+  {
+   "name": "fe1_cluster",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "fe": "fe1"
+  },
+  {
+   "name": "fe2way_robust",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": [
+    "fe1",
+    "fe2"
+   ]
+  },
+  {
+   "name": "dummies_robust",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "dummies": [
+    "dcat",
+    "dnum",
+    "dflo"
+   ]
+  },
+  {
+   "name": "glob_string_X",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": "x1 x2 reg_*",
+   "se": "robust"
+  },
+  {
+   "name": "k2_cluster",
+   "data": "main",
+   "Z": [
+    "z1",
+    "z2"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "ar_grid_halfwidth": 50.0,
+   "ar_grid_points": 801
+  },
+  {
+   "name": "weak_ar",
+   "data": "weak",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "weak_ar_cluster",
+   "data": "weak",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1"
+   ],
+   "se": "cluster",
+   "clusterid": "clu"
+  },
+  {
+   "name": "alpha10_tau20",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "alpha": 0.1,
+   "op_tau": 0.2
+  },
+  {
+   "name": "op_offgrid",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "op_alpha": 0.1
+  },
+  {
+   "name": "noX_robust",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "fe1_weights",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": "fe1",
+   "weights": "w",
+   "wtype": "aweight"
+  },
+  {
+   "name": "lasso_base",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "dummies": [
+    "dnum"
+   ],
+   "show_selection": true
+  },
+  {
+   "name": "lasso_keep_glob",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "dummies": [
+    "dnum"
+   ],
+   "lasso_keep": "x1*",
+   "expand_x": [
+    "square",
+    "cube",
+    "interact_with_X"
+   ],
+   "expand_dummies": [
+    "interact_with_X",
+    "interact_with_dummies"
+   ]
+  },
+  {
+   "name": "lasso_override",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "lasso_lambda_override": 25.0
+  },
+  {
+   "name": "lasso_cluster_wt",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "weights": "w",
+   "wtype": "aweight",
+   "lasso": true,
+   "dummies": [
+    "dnum"
+   ]
+  },
+  {
+   "name": "lasso_spatial",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "spatial",
+   "lat": "lat",
+   "lon": "lon",
+   "spatial_cutoff": 150.0,
+   "spatial_kernel": "uniform",
+   "spatial_metric": "haversine",
+   "lasso": true
+  },
+  {
+   "name": "lasso_expand_override",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "dummies": [
+    "dnum"
+   ],
+   "expand_override": {
+    "x1": [
+     "square"
+    ],
+    "_D_dnum_2": [
+     "square"
+    ]
+   }
+  },
+  {
+   "name": "lasso_fe",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": "fe1",
+   "lasso": true
+  },
+  {
+   "name": "lasso_k2",
+   "data": "main",
+   "Z": [
+    "z1",
+    "z2"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "ar_grid_halfwidth": 50.0,
+   "ar_grid_points": 801
+  },
+  {
+   "name": "lasso_dcat_probe",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "dummies": [
+    "dcat"
+   ]
+  },
+  {
+   "name": "lasso_dcat_keep",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "dummies": [
+    "dcat",
+    "dnum"
+   ],
+   "lasso_keep": "_D_dcat_*",
+   "expand_dummies": [
+    "interact_with_X",
+    "interact_with_dummies"
+   ],
+   "show_selection": true
+  },
+  {
+   "name": "glob_class_X",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": "x[12] x3",
+   "se": "robust"
+  },
+  {
+   "name": "neg_theta_robust",
+   "data": "ext",
+   "Y": "yneg",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "fe1_wt_aw_robust",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": "fa",
+   "weights": "w",
+   "wtype": "aweight"
+  },
+  {
+   "name": "fe1_wt_pw_cluster",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": "fa",
+   "weights": "w",
+   "wtype": "pweight"
+  },
+  {
+   "name": "fe2way_wt_aw_robust",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": [
+    "fa",
+    "fb"
+   ],
+   "weights": "w",
+   "wtype": "aweight"
+  },
+  {
+   "name": "fe2way_wt_pw_cluster",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": [
+    "fa",
+    "fb"
+   ],
+   "weights": "w",
+   "wtype": "pweight"
+  },
+  {
+   "name": "fe_nested_cluster",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": "fan"
+  },
+  {
+   "name": "fe2way_nested_cluster",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": [
+    "fan",
+    "fb"
+   ]
+  },
+  {
+   "name": "fe2way_disconnected",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": [
+    "fd1",
+    "fd2"
+   ]
+  },
+  {
+   "name": "fe2way_disconnected_cluster",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": [
+    "fd1",
+    "fd2"
+   ]
+  },
+  {
+   "name": "k2_het_robust",
+   "data": "ext",
+   "Z": [
+    "z1",
+    "z2"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "k2_het_cluster",
+   "data": "ext",
+   "Z": [
+    "z1",
+    "z2"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl"
+  },
+  {
+   "name": "lasso_shift_raw",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8"
+   ],
+   "se": "robust",
+   "lasso": true
+  },
+  {
+   "name": "lasso_shift_ytmz",
+   "data": "ext",
+   "Y": "ys",
+   "T": "ts",
+   "M": "ms",
+   "Z": [
+    "zs"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8"
+   ],
+   "se": "robust",
+   "lasso": true
+  },
+  {
+   "name": "lasso_noexp_raw",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "expand_x": []
+  },
+  {
+   "name": "lasso_noexp_shifted",
+   "data": "ext",
+   "Y": "ys",
+   "T": "ts",
+   "M": "ms",
+   "Z": [
+    "zs"
+   ],
+   "X": [
+    "xs1",
+    "xs2",
+    "xs3",
+    "xs4",
+    "xs5",
+    "xs6",
+    "xs7",
+    "xs8"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "expand_x": []
+  },
+  {
+   "name": "lasso_wt_pweight",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8"
+   ],
+   "se": "robust",
+   "weights": "w",
+   "wtype": "pweight",
+   "lasso": true
+  },
+  {
+   "name": "lasso_cluster_only",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "lasso": true
+  },
+  {
+   "name": "lasso_postlasso_loadings",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8",
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20"
+   ],
+   "se": "robust",
+   "lasso": true,
+   "show_selection": true
+  },
+  {
+   "name": "fe1_zero_weights",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": "fz",
+   "weights": "wz",
+   "wtype": "aweight"
+  },
+  {
+   "name": "missing_text_ids",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl_txt",
+   "fe": "fa_txt",
+   "dummies": [
+    "dtxt"
+   ]
+  },
+  {
+   "name": "illcond_controls",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "year",
+    "year2"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "collinear_control",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x12"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "fe2way_nested_disconnected",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl",
+   "fe": [
+    "fan",
+    "fw"
+   ]
+  },
+  {
+   "name": "spatial_negvar",
+   "data": "negvar",
+   "Z": [
+    "z1"
+   ],
+   "se": "spatial",
+   "lat": "gx",
+   "lon": "gy",
+   "spatial_cutoff": 2.5,
+   "spatial_kernel": "uniform",
+   "spatial_metric": "euclidean"
+  },
+  {
+   "name": "fe2_chain",
+   "data": "chain",
+   "Z": [
+    "z1"
+   ],
+   "se": "robust",
+   "fe": [
+    "wkr",
+    "firm"
+   ],
+   "ar_ci": false
+  }
+ ],
+ "boot_configs": [
+  {
+   "name": "boot_pairs_basic",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "method": "pairs",
+   "B": 60,
+   "seed": 555,
+   "ci_type": "basic"
+  },
+  {
+   "name": "boot_block_pct",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "method": "block",
+   "B": 60,
+   "seed": 777,
+   "ci_type": "percentile"
+  },
+  {
+   "name": "boot_block_stud",
+   "data": "main",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "clu",
+   "method": "block",
+   "B": 60,
+   "seed": 888,
+   "ci_type": "studentized",
+   "bootstrap_diagnostics": true
+  },
+  {
+   "name": "boot_pairs_missing",
+   "data": "ext",
+   "M": "mmiss",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "xmiss"
+   ],
+   "se": "robust",
+   "method": "pairs",
+   "B": 60,
+   "seed": 4242,
+   "ci_type": "percentile"
+  },
+  {
+   "name": "boot_block_missing",
+   "data": "ext",
+   "M": "mmiss",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "xmiss"
+   ],
+   "se": "cluster",
+   "clusterid": "cl_txt",
+   "method": "block",
+   "B": 60,
+   "seed": 4343,
+   "ci_type": "studentized"
+  },
+  {
+   "name": "boot_block_fe_nested",
+   "data": "ext",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "fe": "fan",
+   "se": "cluster",
+   "clusterid": "cl",
+   "method": "block",
+   "B": 60,
+   "seed": 4545,
+   "ci_type": "studentized"
+  }
+ ],
+ "error_configs": [
+  {
+   "name": "err_one_cluster",
+   "data": "ext",
+   "expect": "clusters",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "cluster",
+   "clusterid": "cl_one"
+  },
+  {
+   "name": "err_z_absorbed_by_fe",
+   "data": "ext",
+   "expect": "identification",
+   "Z": [
+    "zg"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "fe": "fa"
+  },
+  {
+   "name": "err_z_collinear",
+   "data": "ext",
+   "expect": "identification",
+   "Z": [
+    "z1",
+    "z1dbl"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_const_treatment",
+   "data": "ext",
+   "expect": "identification",
+   "T": "tconst",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_x_contains_y",
+   "data": "ext",
+   "expect": "role",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "y"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_z_equals_t",
+   "data": "ext",
+   "expect": "role",
+   "Z": [
+    "tvar"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_dup_instrument",
+   "data": "ext",
+   "expect": "role",
+   "Z": [
+    "z1",
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_inf_value",
+   "data": "ext",
+   "expect": "nonfinite",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "xinf"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_negative_weight",
+   "data": "ext",
+   "expect": "weights",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "weights": "wneg",
+   "wtype": "aweight"
+  },
+  {
+   "name": "err_n_le_k",
+   "data": "ext",
+   "expect": "too_few_obs",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3",
+    "xsparse"
+   ],
+   "se": "robust"
+  },
+  {
+   "name": "err_spatial_allpairs",
+   "data": "ext",
+   "expect": "spatial_degenerate",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "spatial",
+   "lat": "lat",
+   "lon": "lon",
+   "spatial_cutoff": 500.0,
+   "spatial_kernel": "uniform",
+   "spatial_metric": "haversine"
+  },
+  {
+   "name": "err_spatial_args_robust",
+   "data": "ext",
+   "expect": "option",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "se": "robust",
+   "lat": "lat",
+   "lon": "lon"
+  },
+  {
+   "name": "err_m_collinear_t",
+   "data": "ext",
+   "expect": "identification",
+   "M": "mcol",
+   "Z": [
+    "z1"
+   ],
+   "X": [
+    "x1"
+   ],
+   "se": "robust"
+  }
+ ],
+ "error_classes": [
+  [
+   "clusters",
+   [
+    "at least 2 clusters"
+   ]
+  ],
+  [
+   "spatial_degenerate",
+   [
+    "covers all pairs"
+   ]
+  ],
+  [
+   "nonfinite",
+   [
+    "infinite"
+   ]
+  ],
+  [
+   "weights",
+   [
+    "weights must be non-negative",
+    "all weights are zero"
+   ]
+  ],
+  [
+   "too_few_obs",
+   [
+    "not enough observations",
+    "no observations remaining"
+   ]
+  ],
+  [
+   "identification",
+   [
+    "no variation",
+    "collinear after",
+    "collinear with the treatment",
+    "not identified"
+   ]
+  ],
+  [
+   "role",
+   [
+    "must not contain the outcome",
+    "must differ from the outcome",
+    "three different columns",
+    "duplicate instrument"
+   ]
+  ],
+  [
+   "option",
+   [
+    "used only with se=",
+    "must be true or false",
+    "must lie strictly between",
+    "must be one of"
+   ]
+  ]
+ ]
+}

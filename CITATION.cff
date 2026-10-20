@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use ivmediate, please cite the paper below."
+title: "ivmediate: IV mediation analysis with a single instrument (R, Python, MATLAB, Stata)"
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/aferrara87/ivmediate"
+authors:
+  - family-names: Ferrara
+    given-names: Andreas
+    email: a.ferrara@pitt.edu
+    affiliation: "University of Pittsburgh"
+  - family-names: Gold
+    given-names: Robert
+    affiliation: "Kiel Institute for the World Economy"
+  - family-names: Heblich
+    given-names: Stephan
+    affiliation: "University of Toronto"
+  - family-names: Pinto
+    given-names: Rodrigo
+    affiliation: "University of South Florida"
+# TODO when NBER assigns them: add "number" (the working paper number) and "doi" below.
+preferred-citation:
+  type: report
+  title: "Identifying Causal Mediation Effects with a Single Instrument"
+  authors:
+    - family-names: Ferrara
+      given-names: Andreas
+    - family-names: Gold
+      given-names: Robert
+    - family-names: Heblich
+      given-names: Stephan
+    - family-names: Pinto
+      given-names: Rodrigo
+  institution:
+    name: "National Bureau of Economic Research"
+  collection-title: "NBER Working Paper Series"
+  year: 2026

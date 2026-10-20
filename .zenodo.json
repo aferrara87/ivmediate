@@ -1,0 +1,22 @@
+{
+  "title": "ivmediate: causal mediation analysis with a single instrument (Python, R, Stata, MATLAB)",
+  "upload_type": "software",
+  "description": "<p>Software for the estimator of Ferrara, Gold, Heblich and Pinto (2026), <em>Identifying Causal Mediation Effects with a Single Instrument</em>. With one instrument for the treatment, <code>ivmediate</code> splits the treatment's effect on an outcome into a direct effect and an indirect effect through a mediator, without a separate instrument for the mediator. It reports Olea&ndash;Pflueger effective F-statistics for the usual and the conditional first stage, Anderson&ndash;Rubin confidence sets, and &kappa;- and R&sup2;-based sensitivity analyses. It supports one or several instruments, one- and two-way fixed effects, weights, classical, robust, cluster and Conley standard errors, post-double-selection LASSO and the bootstrap.</p><p>The implementations in Python, R, Stata and MATLAB give the same results; they are tested against each other in the repository's <code>validation/</code> folder.</p>",
+  "creators": [
+    {"name": "Ferrara, Andreas", "affiliation": "University of Pittsburgh"},
+    {"name": "Gold, Robert", "affiliation": "Kiel Institute for the World Economy"},
+    {"name": "Heblich, Stephan", "affiliation": "University of Toronto"},
+    {"name": "Pinto, Rodrigo", "affiliation": "University of South Florida"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "causal mediation",
+    "instrumental variables",
+    "two-stage least squares",
+    "weak instruments",
+    "sensitivity analysis",
+    "econometrics"
+  ]
+}

@@ -1,0 +1,45 @@
+[build-system]
+# hatchling builds the wheel without writing build/ or *.egg-info into the source tree
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ivmediate"
+version = "2.0.0"
+description = "IV mediation analysis with a single instrument (Ferrara, Gold, Heblich and Pinto)"
+readme = "README.md"
+authors = [
+    { name = "Andreas Ferrara" },
+    { name = "Robert Gold" },
+    { name = "Stephan Heblich" },
+    { name = "Rodrigo Pinto" },
+]
+maintainers = [{ name = "Andreas Ferrara", email = "a.ferrara@pitt.edu" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "pandas>=1.3",
+    "scikit-learn>=1.0",
+]
+keywords = ["causal mediation", "instrumental variables", "2SLS", "econometrics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/aferrara87/ivmediate"
+Documentation = "https://github.com/aferrara87/ivmediate/blob/main/python/README.md"
+Source = "https://github.com/aferrara87/ivmediate"
+Issues = "https://github.com/aferrara87/ivmediate/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ivmediate"]

@@ -1,0 +1,5 @@
+v 3
+d ivmediate: causal mediation analysis for linear IV models with a single instrument
+d Andreas Ferrara, Robert Gold, Stephan Heblich, Rodrigo Pinto
+d https://github.com/aferrara87/ivmediate
+p ivmediate Causal mediation analysis for linear IV models with a single instrument

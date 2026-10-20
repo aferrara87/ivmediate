@@ -1,0 +1,1 @@
+Python 3.13.9; ivmediate 2.0.0; numpy 2.3.5 (mkl-sdl 2025); pandas 2.3.3
